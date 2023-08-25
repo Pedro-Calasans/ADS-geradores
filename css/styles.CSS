@@ -6,5 +6,14 @@
 }
 
 .color-accordion{
-    background-color: rgb(255, 238, 0);
+    background-color: #f3be43;
+    /*f3be43*/
+}
+
+.header-color{
+    background-color: #000000;
+}
+
+.footer-color{
+    background-color: #000000;
 }
