@@ -17,100 +17,279 @@
 
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+    <link rel="icon" href="IMG/logo novo black.png"> 
     <title>Grupo ADS Geradores</title>
     
   </head>
   
   <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg header-color border-bottom border-body" >
-          <div class="container-fluid ">
-            <a class="navbar-brand" href="index.html"> <img src="IMG/lono_NOVO120.png" style="height: 55px; margin-left: 20px;" alt="logo"></a>
-            <button class="navbar-light navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-light navbar-toggler-icon"></span>
-            </button> 
-            <div class="collapse navbar-light navbar-collapse d-md-flex justify-content-end " id="navbarNavDropdown">
-              <ul class="navbar-nav " style="margin-right: 100px;">
-                <li class="nav-item text-white">
-                  <a class=" btn btn-outline-warning nav-link text-white fw-bolder"  href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class=" btn btn-outline-warning nav-link text-white fw-bolder" href="servicos.html">
-                    Serviços
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="btn btn-outline-warning nav-link text-white fw-bolder" href="contato.html">Contato</a>
-                </li>
-              </ul>
-            </div>
+    <header >
+      <nav id="navbar-example2" class="navbar navbar-expand-lg  bg-dark border-bottom border-body navbar-dark" >
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html"> <img src="IMG/logo horizontal white.png" style="height: 55px; margin-left: 50px;" alt="logo"></a>
+          <button class="navbar-light navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-light navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-light navbar-collapse d-md-flex justify-content-end " id="navbarNavDropdown">
+            <ul class="navbar-nav " style="margin-right: 100px;">
+              <li class="nav-item texto-menu-color">
+                <a class=" nav-link texto-menu-color "  href="index.html">Home</a>
+              </li>
+              <li  class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle texto-menu-color" href="servicos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Serviços
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading1">Contrato de manutenção</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading2">Manutenção Preventiva</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading3">Manutenção Corretiva</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading4">Automação Retrofit</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading5">Diálise e Limpeza de Tanque</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class=" nav-link texto-menu-color" href="contato.html">Contato</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
-    
-    <div class="d-flex m-4">
-        <div class="accordion accordion-flush flex-fill color-accordion" id="accordionFlushExample">
-            <div class="accordion-item ">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed color-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Serviço
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed color-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Serviço
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed color-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Serviço
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed color-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Serviço
-                  </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed color-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    Serviço
-                  </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
+
+    <div class="d-flex">
+      <div class=" w-75 pe-5 mt-5" style="margin-left: 200px;">
+        <div data-bs-spy="scroll" data-bs-target="servicos" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+          
+          <div>
+            <h4 id="scrollspyHeading1">CONTRATO DE MANUTENÇÃO</h4><br>
+              <p class=p-justificado>
+                Os serviços de manutenção preventiva e corretiva consistem e manter os equipamentos da CONTRATADA dentro dos padrões 
+                técnicos indicados pelo fabricante, de modo a mantê-los em condições adequadas de funcionamento e para que os mesmos 
+                alcancem o máximo da vida útil esperada, reduzindo ao mínimo as possibilidades de falhas ou desgastes prematuros.<br>
+                A GRUPO ADS Geradores oferece aos seus clientes três opções de contratos com planos de manutenções diferenciados 
+                conforme a necessidade de sua empresa.<br>
+                <ul>
+                <li>Plano 1: visitas mensais.</li>
+                <li>Plano 2: visitas bimestrais.</li>
+                <li>Plano 3: visitas trimestrais.</li>
+                </ul>
+              </p>
+              <br>
+              <hr><br>
           </div>
-    </div> 
-    
+
+          <div>
+            <h4 id="scrollspyHeading2">SOBRE A MANUTENÇÃO PREVENTIVA EM GERADORES</h4><br>
+              <p class=p-justificado>
+                Fique tranquilo e evite gastos inesperados, nossa equipe oferece o melhor suporte para manutenção preventiva
+                Para Manutenção Preventiva em Geradores utilizamos conjunto de testes e verificações conforme orientação dos 
+                fabricantes, necessárias para manter os equipamentos operando dentro de suas características técnicas nominais, 
+                prevenindo quanto às deficiências e degradações e possibilitando ao longo do tempo, a formação do histórico do 
+                equipamento e garantia da confiabilidade dos mesmos, reduzindo o índice de defeitos e intervenções corretivas.<br>
+                
+                Todas as manutenções preventivas obedecerão ao preenchimento de CHECK-LIST específico a este contrato; e a 
+                disponibilidades de equipamentos para back-up no caso de manutenção em laboratório das máquinas existentes.<br>
+                
+                Oferecemos aos nossos clientes o mais completo contrato de manutenção preventiva que o mercado oferece, entre em 
+                contato com nossa equipe comercial e solicite uma proposta.<br>
+              </p>
+              <p class="fw-bolder">PORQUE FAZER A MANUTENÇÃO PREVENTIVA EM GERADORES</p>
+              <p class=p-justificado>
+                A Manutenção Preventiva dos Geradores de Energia serve para aumentar a vida útil do equipamento, aumentando seu 
+                custo-benefício. Além disso, a manutenção periódica inibe e previne potenciais problemas, evitando falhas no sistema 
+                e dores de cabeça.<br>
+                
+                Equipamentos que são usados eventualmente podem apresentar falhas ao serem ligados, enquanto aqueles que funcionam 
+                de forma contínua apresentam desgastes comuns ao tempo. Por isso, a manutenção preventiva é importante. Ela antecipa 
+                possíveis problemas que, se ocorrerem, custarão muito mais a fornecedores e clientes.<br>
+                
+                A manutenção preventiva é importante para garantir o funcionamento correto, com capacidade de produzir energia 
+                conforme o produto promete.<br>
+                
+                Existem outros dois tipos de manutenção, a preditiva e a corretiva. A preditiva é feita quando o equipamento atinge
+                um determinado tempo de funcionamento. Nesse caso, é preciso substituir filtros, óleo lubrificante ou alguma outra peça.<br>
+                
+                A Manutenção Preventiva em Geradores é bastante comum. Ela é feita quando o gerador de energia já apresenta algum 
+                defeito que impossibilite ou prejudique seu funcionamento. Esse tipo de manutenção é mais custoso e é, por isso, que 
+                a manutenção preventiva é a melhor saída.<br>
+              </p>
+              <br>
+              <hr><br>
+          </div>
+
+          <div>
+            <h4 id="scrollspyHeading3">MANUTENÇÃO CORRETIVA EM GERADORES</h4><br>
+              <p class=p-justificado>
+                Todos os Grupos de Geradores de Energia precisam de manutenção e inspeção periódica, assim seu negócio 
+                nunca irá parar por falta de energia.</p>
+
+              <p class="fw-bolder">SOBRE A MANUTENÇÃO CORRETIVA EM GERADORES</p>
+              <p class=p-justificado>
+                Vida longa aos equipamentos com boa Manutenção Corretiva em Geradores!<br>
+                A Manutenção Corretiva em Geradores tem como principal função tornar os equipamentos aptos e adequados novamente quando ocorre
+                algum tipo de falha ou quebra do maquinário.  As atividades de manutenção preventiva reestabelecem as condições interrompidas 
+                por um algum tipo de intercorrência no sistema dos geradores. Em suma, a manutenção corretiva em geradores utiliza de técnicas 
+                para detectar possíveis inconsistências no sistema e realizar o seu reparo que pode ser na parte elétrica ou em algum tipo de 
+                peça, que é trocado ou restaurada.<br>
+                
+                Neste sentido, a manutenção corretiva em geradores se configura como uma prática que atua eficazmente na prolongação da vida 
+                útil dos equipamentos, evitando que seja reposto, o que ocasionaria um investimento muito maior. Desta maneira, a manutenção, 
+                quando realizada por empresas confiáveis e especializadas no segmento, representa ganhos não somente em termos de qualidade 
+                do equipamento, mas também econômicos, pois evita a reposição do maquinário.</p>
+                
+              <p class="fw-bolder">PRINCIPAIS PROCEDIMENTOS REALIZADO DURANTE A MANUTENÇÃO CORRETIVA EM GERADORES</p>
+              <p class=p-justificado>
+                Como citado anteriormente, a manutenção corretiva em geradores é feita quando o equipamento apresenta algum tipo de falha em 
+                seu funcionamento, que pode ser na parte elétrica ou alguma inconformidade em uma determinada peça. Conheça abaixo alguns dos 
+                diversos processos da manutenção:<br>
+                
+                Trocas e reparos em peças ou outros elementos partes do sistema de geradores;<br>
+                Realização de análises e testes para detectar possíveis inconformidades do sistema elétrico;<br>
+                Realização de treinamento e orientação para colaboradores que frequentemente operam o sistema a fim de reduzir possíveis falhas 
+                de operação;<br>
+                Elaboração de relatório com os reparos feitos.<br>
+                Uma das grandes vantagens de contar com uma empresa de credibilidade que faz a manutenção corretiva em geradores é que geralmente 
+                essas empresas atuam 24 horas por dia. Desta maneira, se houver qualquer tipo de problema, seja qual for o horário, elas estarão 
+                prontas para atender, o que diminui os riscos de acidentes ou agravamento da falha.<br>
+              </p>
+                
+              <p class="fw-bolder">ENTENDA A DIFERENÇA ENTRE MANUTENÇÃO PREVENTIVA E CORRETIVA EM GERADORES</p>
+              <p class=p-justificado>
+                A manutenção preventiva é necessária para inibir possíveis falhas que o gerador possa apresentar.<br>
+                
+                Sendo assim, ela é feita em um período determinado por um técnico especializado. Sua função é avaliar o equipamento como um todo 
+                e realizar testes para identificar potenciais inconformidades.<br>
+                
+                Desta forma, o técnico consegue prever quaisquer problemas que possam ocorrer com o gerador e repará-lo previamente. É uma 
+                medida barata e totalmente necessária para o equipamento.<br>
+                
+                A falta deste tipo de manutenção pode gerar problemas diversos para os geradores de energia. Um dos pontos mais críticos é o 
+                funcionamento do equipamento, que pode ficar comprometido pela falta de manutenção.<br>
+                
+                Geradores de energia que passam pelo processo preventivo tendem a apresentar poucas intercorrências ao longo de sua vida útil. 
+                Por outro lado, a manutenção corretiva é feita quando ocorre um dano no equipamento, ou seja, é feito o conserto. É um processo 
+                que gera custos elevados, muito acima do valor da preventiva. Por isso a diferença entre Manutenção Preventiva e Corretiva em 
+                Geradores.<br>
+              </p>
+              <br>
+              <hr><br>
+          </div>
+
+          <div>
+            <h4 id="scrollspyHeading4">SOBRE A AUTOMAÇÃO RETROFIT DE GERADORES</h4><br>
+              <p class=p-justificado>
+                No Retrofit de Geradores são realizados projetos de automatização de geradores tanto de pequeno, como também, de médio e 
+                grande porte.<br>
+                A Automação Retrofit de Geradores é um dos procedimentos dentro da manutenção e assistência técnica. Esse processo serve para 
+                garantir a modernização para geradores já em uso. O procedimento garante que o gerador passe por inovações e por reformas que 
+                o coloquem no mesmo nível que os novos geradores de seu segmento. O Retrofit de Geradores é, portanto, um processo com grande 
+                praticidade e rapidez, que resulta em modernidade, qualidade e segurança. No retrofit são realizados projetos de automatização
+                de geradores tanto de pequeno, como também, de médio e grande porte.</p>
+              <p class="fw-bolder">AS PRINCIPAIS ESPECIFICAÇÕES E CARACTERÍSTICAS DO PROCESSO DE AUTOMAÇÃO RETROFIT DE GERADORES</p>
+              <p class=p-justificado>
+                O processo de Automação Retrofit de Geradores vai sempre utilizar matérias-primas de excelente qualidade, além disso precisa 
+                contar com uma equipe técnica profissional altamente especializada e qualificada nesse tipo de operação e ainda aplicar técnicas 
+                de última geração e de alta tecnologia para trazer a modernidade e a inovação necessária para o gerador.<br>
+                
+                O processo de retrofit de geradores precisa também respeitar todas as normas técnicas e regulamentações de segurança e de qualidade 
+                do segmento, e realizar tanto a manutenção corretiva como, também, a manutenção preventiva, através de testes e de trocas de peças.</p> 
+              <p class="fw-bolder">AS VANTAGENS E OS BENEFÍCIOS DO PROCESSO DE AUTOMAÇÃO RETROFIT DE GERADORES</p>
+              <p class=p-justificado>
+                As vantagens e os benefícios do processo de Automação Retrofit de Geradores são muitas, entre elas: garantir alta resistência e 
+                durabilidade para os geradores; elevar o seu rendimento para o máximo de produtividade; e ainda, diminuir a necessidade de gastos 
+                com a compra de novos equipamentos.<br>
+                
+                Além disso, esse processo de retrofit de geradores sempre precisa atender às necessidades e especificações do cliente, garantindo 
+                assim, total customização e personalização dos geradores, os quais vão ser adaptáveis as diferentes realidades e aplicações dos 
+                diversos segmentos de mercado.<br>
+              </p>
+              <br>
+              <hr><br>
+          </div>
+
+          <div>
+            <h4 id="scrollspyHeading5">DIÁLISE E LIMPEZA DE TANQUE DE COMBUSTÍVEL (DIESEL)</h4>
+              <p class=p-justificado>
+                A diálise regular eno tanque dos veículos, retira a água, impurezas e possíveis borras, antes que essas cheguem aos filtros. 
+                A adoção desta medida prolonga a vida útil dos filtros e equipamentos;<br>
+
+                A limpeza de tanque de combustível a descontaminação, a purificação e a remoção de impurezas e borras dos tanques são feitas sem 
+                a necessidade de desmontagem. <br>
+
+              <p class="fw-bolder">POR QUE FAZER?</p>
+              <p class=p-justificado>
+                <ul>
+                  <li>Reduz as manutenções. </li>
+                  <li>Melhora a qualidade do diesel. </li>
+                  <li>Não desperdiça o combustível. </li>
+                  <li>Aumenta o desempenho do motor. </li>
+                  <li>Evita o surgimento de borras e outras substâncias. </li>
+                  <li>Prolonga a durabilidade de tanques, motores, bombas e bicos injetores.</li>
+                </ul>
+              </p>
+
+              <p class="fw-bolder">COMO É FEITA A LIMPEZA</p>
+              <p class=p-justificado>
+                No procedimento, é utilizado um equipamento móvel para limpeza de tanque de combustível, com vazão de 9.000 litros por hora e 
+                triplo sistema de filtragem. <br>
+
+                Nesse processo, o líquido circula várias vezes por um sistema de purificação, fazendo com que o diesel seja devolvido filtrado 
+                para o tanque após a retenção de impurezas, águas, borras, ferrugens, fungos, bactérias e outras substâncias que podem trazer 
+                danos ao combustível e prejudicar o funcionamento do motor.<br>
+              </p>
+
+              <p class="fw-bolder">QUANDO LIMPAR</p>
+              <p class=p-justificado>
+                A cada seis meses, para motores utilizados em regime de emergência.<br>
+
+                A cada um ano, para motores utilizados em horário de ponta.<br>
+
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Whats">
+      <a href="https://wa.me/5511998670001? text=Olá, agradecemos seu contato." target="_blank">
+        <img src="IMG/whatsapp chat.png" width="200" alt="Fale conosco pelo whatsapp" title="Fale conosco pelo whatsapp">
+      </a>
+    </div>
 
     <footer>
-      <div class="d-flex footer-color  text-white">
-        <div  style="margin-left: 20px;" >
-          <p class="">GRUPO ADS GERADORES</p>
-          <p>Endereço: <br> Whatsapp: (11)998670001 <br>Tel: (11)975833199 </p>
+      <div class="d-flex bg-dark  texto-menu-color">
+        <div  class=" w-50 " style="margin-left: 50px;" >
+          <div class="d-flex justify-content-start">
+            <div class=" w-50 ">
+              <h5>Localização</h5>
+              <p>Endereço: R Taipas, 541 <br>Bairro: Santa Maria <br>CEP: 09560-200 <br>Municipio: São Caetano do Sul <br>Estado: SP  </p>
+            </div>
+            <div class=" w-50 ">
+              <h5>Contato</h5>
+              <p>
+                <img width="32" height="32" src="https://img.icons8.com/fluency/48/google-pixel6.png" alt="google-pixel6"/>
+                (11) 97583-3199 
+              </p>
+              <p>
+                <img width="32" height="32" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+                (11) 99867-0001 
+              </p> 
+              <p>
+                <img width="32" height="32" src="https://img.icons8.com/flat-round/64/secured-letter--v1.png" alt="secured-letter--v1"/>
+                contato@adsgeradores.com.br 
+              </p>
+            </div>
+          </div> 
+        </div>
+        <div class=" w-50 ">
+          <h5 class=" text-center">Acompanhe Nossas Redes Sociais</h5>
+          <div class="d-flex justify-content-center">
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
+            <img width="48" height="48" src="https://img.icons8.com/color/48/telegram-app--v1.png" alt="telegram-app--v1"/>
+          </div>
         </div>
       </div>
     </footer>

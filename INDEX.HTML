@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -17,7 +18,7 @@
 
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+    <link rel="icon" href="IMG/logo novo black.png">
     <title>Grupo ADS Geradores</title>
     
   </head>
@@ -25,30 +26,37 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg header-color border-bottom border-body" >
+      <nav id="navbar-example2" class="navbar navbar-expand-lg  bg-dark border-bottom border-body navbar-dark" >
         <div class="container-fluid ">
-          <a class="navbar-brand" href="index.html"> <img src="IMG/lono_NOVO120.png" style="height: 55px; margin-left: 20px;" alt="logo"></a>
+          <a class="navbar-brand" href="index.html"> <img src="IMG/logo horizontal white.png" style="height: 55px; margin-left: 50px;" alt="logo"></a>
           <button class="navbar-light navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-light navbar-toggler-icon"></span>
           </button> 
           <div class="collapse navbar-light navbar-collapse d-md-flex justify-content-end " id="navbarNavDropdown">
             <ul class="navbar-nav " style="margin-right: 100px;">
-              <li class="nav-item text-white">
-                <a class=" btn btn-outline-warning nav-link text-white fw-bolder"  href="index.html">Home</a>
+              <li class="nav-item texto-menu-color">
+                <a class=" nav-link texto-menu-color "  href="index.html">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class=" btn btn-outline-warning nav-link text-white fw-bolder" href="servicos.html">
+              <li  class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle texto-menu-color" href="servicos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Serviços
                 </a>
+                <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading1">Contrato de manutenção</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading2">Manutenção Preventiva</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading3">Manutenção Corretiva</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading4">Automação Retrofit</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading5">Diálise e Limpeza de Tanque</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="btn btn-outline-warning nav-link text-white fw-bolder" href="contato.html">Contato</a>
+                <a class=" nav-link texto-menu-color" href="contato.html">Contato</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-  </header>
+    </header>
 
 
     <div>
@@ -69,14 +77,14 @@
           <div class="carousel-item">
             <img src="IMG/img02.jpg" class="d-block w-100" style="height: 630px;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>AUTOMAÇÃO E RETROFIT</h5>
+              <h5>AUTOMAÇÃO RETROFIT</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="IMG/img03.jpg" class="d-block w-100" style="height: 630px;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>TROCA DE ÓLEO</h5>
+              <h5>DIÁLISE E LIMPEZA DE TANQUE</h5>
               <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
@@ -99,47 +107,70 @@
       </div>
     </div>
     <div class="d-flex">
-      <div class=" w-50" style="margin-left: 200px;">
+      <div class=" w-50 pe-5" style="margin-left: 200px;">
         <p class="fw-bolder ">MANUTENÇÃO</p>
-        <p class="text-justify">O Grupo ADS Geradores conta com uma equipe treinada para atender toda e qualquer falha em seu 
+        <p class= p-justificado>O Grupo ADS Geradores conta com uma equipe treinada para atender toda e qualquer falha em seu 
           equipamento, sendo ela mecânica elétrica e/ou eletrônica.</p>
           
         <p class="fw-bolder">CONTRATO DE MANUTENÇÃO</p>
-        <p class="text-justify">Os serviços de manutenção preventiva e corretiva consistem e manter os equipamentos da CONTRATADA 
+        <p class=p-justificado>Os serviços de manutenção preventiva e corretiva consistem e manter os equipamentos da CONTRATADA 
           dentro dos padrões técnicos indicados pelo fabricante, de modo a mantê-los em condições adequadas de 
           funcionamento e para que os mesmos alcancem o máximo da vida útil esperada, reduzindo ao mínimo as 
           possibilidades de falhas ou desgastes prematuros.</p>
         
         <p class=" fw-bolder">RETROFIT</p>
-        <p>Precisa automatizar seu processo de geração de energia com qualidade, segurança e rigoroso controle 
+        <p class="p-justificado">Precisa automatizar seu processo de geração de energia com qualidade, segurança e rigoroso controle 
           técnico? A ADS Geradores conta com uma engenharia de projetos de automação e estudo de seletividade, 
           fale conosco e exponha sua necessidade.</p>
         
-        <p class="fw-bolder">TROCA DE ÓLEO</p>
-        <P>A ADS Geradores conta também com um avançado processo de análise de óleo lubrificante, com isso nossos 
-          clientes acompanham e controlam o desgaste de seus equipamentos podendo também estender as trocas de óleo 
-          baixando seus custos com segurança. Somos uma empresa com consciência ambiental, todo material das trocas 
-          de óleo e filtros são destinados para reciclagem ou incineração.</p>
       </div>
       <div class=" d-flex">
-        <div class=" d-flex me-5">
-          <div class="mx-auto">
+        <div class="d-flex align-items-center">
+          <div class="">
             <img src="IMG/contrato01.jpg" class="d-block w-100"  alt="...">
           </div>
         </div>
       </div>
     </div>
     <div class="Whats">
-      <a href="https://wa.me/5511998670001? text=Olá, agradecemos seu contato." target="_blank">
+      <a href="https://wa.me/5511998670001? text=${mensagem}" target="_blank">
         <img src="IMG/whatsapp chat.png" width="200" alt="Fale conosco pelo whatsapp" title="Fale conosco pelo whatsapp">
       </a>
     </div>
 
     <footer>
-      <div class="d-flex footer-color  text-white">
-        <div  style="margin-left: 20px;" >
-          <p class="">GRUPO ADS GERADORES</p>
-          <p>Endereço: <br> Whatsapp: (11)998670001 <br>Tel: (11)975833199 </p>
+      <div class="d-flex bg-dark  texto-menu-color">
+        <div  class=" w-50 " style="margin-left: 50px;" >
+          <div class="d-flex justify-content-start">
+            <div class=" w-50 ">
+              <h5>Localização</h5>
+              <p>Endereço: R Taipas, 541 <br>Bairro: Santa Maria <br>CEP: 09560-200 <br>Municipio: São Caetano do Sul <br>Estado: SP  </p>
+            </div>
+            <div class=" w-50 ">
+              <h5>Contato</h5>
+              <p>
+                <img width="32" height="32" src="https://img.icons8.com/fluency/48/google-pixel6.png" alt="google-pixel6"/>
+                (11) 97583-3199 
+              </p>
+              <p>
+                <img width="32" height="32" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+                (11) 99867-0001 
+              </p> 
+              <p>
+                <img width="32" height="32" src="https://img.icons8.com/flat-round/64/secured-letter--v1.png" alt="secured-letter--v1"/>
+                contato@adsgeradores.com.br 
+              </p>
+            </div>
+          </div> 
+        </div>
+        <div class=" w-50 ">
+          <h5 class=" text-center">Acompanhe Nossas Redes Sociais</h5>
+          <div class="d-flex justify-content-center">
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
+            <img width="48" height="48" src="https://img.icons8.com/color/48/telegram-app--v1.png" alt="telegram-app--v1"/>
+          </div>
         </div>
       </div>
     </footer>

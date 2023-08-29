@@ -17,7 +17,7 @@
 
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+    <link rel="icon" href="IMG/logo novo black.png"> 
     <title>Grupo ADS Geradores</title>
     
   </head>
@@ -26,33 +26,40 @@
 
 
     <header>
-      <nav class="navbar navbar-expand-lg header-color border-bottom border-body" >
+      <nav id="navbar-example2" class="navbar navbar-expand-lg  bg-dark border-bottom border-body navbar-dark" >
         <div class="container-fluid ">
-          <a class="navbar-brand" href="index.html"> <img src="IMG/lono_NOVO120.png" style="height: 55px; margin-left: 20px;" alt="logo"></a>
+          <a class="navbar-brand" href="index.html"> <img src="IMG/logo horizontal white.png" style="height: 55px; margin-left: 50px;" alt="logo"></a>
           <button class="navbar-light navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-light navbar-toggler-icon"></span>
           </button> 
           <div class="collapse navbar-light navbar-collapse d-md-flex justify-content-end " id="navbarNavDropdown">
             <ul class="navbar-nav " style="margin-right: 100px;">
-              <li class="nav-item text-white">
-                <a class=" btn btn-outline-warning nav-link text-white fw-bolder"  href="index.html">Home</a>
+              <li class="nav-item texto-menu-color">
+                <a class=" nav-link texto-menu-color "  href="index.html">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class=" btn btn-outline-warning nav-link text-white fw-bolder" href="servicos.html">
+              <li  class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle texto-menu-color" href="servicos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Serviços
                 </a>
+                <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading1">Contrato de manutenção</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading2">Manutenção Preventiva</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading3">Manutenção Corretiva</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading4">Automação Retrofit</a></li>
+                  <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading5">Diálise e Limpeza de Tanque</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="btn btn-outline-warning nav-link text-white fw-bolder" href="contato.html">Contato</a>
+                <a class=" nav-link texto-menu-color" href="contato.html">Contato</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-  </header>
+    </header>
 
     <div class="d-flex flex-column flex-md-row">
-        <div  class="ms-3 w-100 w-md-50">
+        <div  class=" w-50 pe-5 mt-5" style="margin-left: 200px;" > <!--class="ms-3 w-100 w-md-50"-->
             <h2>Envie sua mensagem</h2>
             <form>
                 <div class="form-group">
@@ -74,47 +81,80 @@
                 <div class="text-center">
                     <button class="btn btn-primary mb-3 mt-4 btn-lg" type="submit">Enviar mensagem</button>
                 </div>   
-                </form>
+              </form>
         </div>
-        <div  class="ms-3 mt-2 ml-5 w-100 w-md-50">
-          <h2>Contato</h2> 
-          <div class="">
-        
-          <p>
-            <img width="32" height="32" src="https://img.icons8.com/fluency/48/google-pixel6.png" alt="google-pixel6"/>
-            11 9999-9995
-          </p>
-          <p>
-            <img width="32" height="32" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
-            11 9999-9999
-          </p>
-          <p>
-            <img width="32" height="32" src="https://img.icons8.com/flat-round/64/secured-letter--v1.png" alt="secured-letter--v1"/>            email@gmail.com
-          <div>
-            
-            <article>
-              <h3>
-                <img width="32" height="32" src="https://img.icons8.com/neon/96/address.png" alt="address"/>
-                Localização
-              </h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu+Nacional+-+UFRJ!5e0!3m2!1spt-BR!2sbr!4v1537538326477" width="310" height="170" frameborder="0" style="border:0" allowfullscreen></iframe>  
-            </article>
-          </div>  
-            
-        </div>
-      </div>
-      </div>
-    
-    
-
-      <footer>
-        <div class="d-flex footer-color  text-white">
-          <div  style="margin-left: 20px;" >
-            <p class="">GRUPO ADS GERADORES</p>
-            <p>Endereço: <br> Whatsapp: (11)998670001 <br>Tel: (11)975833199 </p>
+        <div class="d-flex">
+          <div  class="ms-3 mt-2 ml-5 w-100 w-md-50"> <!-- -->
+            <h2>Contato</h2> 
+            <div class="">
+          
+            <p>
+              <img width="32" height="32" src="https://img.icons8.com/fluency/48/google-pixel6.png" alt="google-pixel6"/>
+              (11) 97583-3199 
+            </p>
+            <p>
+              <img width="32" height="32" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+              (11) 99867-0001
+            </p>
+            <p>
+              <img width="32" height="32" src="https://img.icons8.com/flat-round/64/secured-letter--v1.png" alt="secured-letter--v1"/>            
+              contato@adsgeradores.com.br 
+            <div>
+              
+              <article>
+                <h3>Localização</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.3629880645026!2d-46.55506028906472!3d-23.627168163924598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d29abcd4acf%3A0xcd506f0bbd4713f!2sR.%20Taipas%2C%20541%20-%20Santa%20Maria%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009560-200%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1693078758547!5m2!1spt-BR!2sus" width="350" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </article>
+            </div>  
+              
           </div>
         </div>
-      </footer>
+
+      </div>
+    </div>
+    
+    <div class="Whats">
+      <a href="https://wa.me/5511998670001? text=Olá, agradecemos seu contato." target="_blank">
+        <img src="IMG/whatsapp chat.png" width="200" alt="Fale conosco pelo whatsapp" title="Fale conosco pelo whatsapp">
+      </a>
+    </div>
+
+    <footer>
+      <div class="d-flex bg-dark  texto-menu-color">
+        <div  class=" w-50 " style="margin-left: 50px;" >
+          <div class="d-flex justify-content-start">
+            <div class=" w-50 ">
+              <h5>Localização</h5>
+              <p>Endereço: R Taipas, 541 <br>Bairro: Santa Maria <br>CEP: 09560-200 <br>Municipio: São Caetano do Sul <br>Estado: SP  </p>
+            </div>
+            <div class=" w-50 ">
+              <h5>Contato</h5>
+              <p>
+                <img width="32" height="32" src="https://img.icons8.com/fluency/48/google-pixel6.png" alt="google-pixel6"/>
+                (11) 97583-3199 
+              </p>
+              <p>
+                <img width="32" height="32" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+                (11) 99867-0001 
+              </p> 
+              <p>
+                <img width="32" height="32" src="https://img.icons8.com/flat-round/64/secured-letter--v1.png" alt="secured-letter--v1"/>
+                contato@adsgeradores.com.br 
+              </p>
+            </div>
+          </div> 
+        </div>
+        <div class=" w-50 ">
+          <h5 class=" text-center">Acompanhe Nossas Redes Sociais</h5>
+          <div class="d-flex justify-content-center">
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
+            <img width="48" height="48" src="https://img.icons8.com/color/48/telegram-app--v1.png" alt="telegram-app--v1"/>
+          </div>
+        </div>
+      </div>
+    </footer>
       
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
