@@ -2,6 +2,13 @@
     position: fixed;
     bottom: 40px;
     right: 10px;
+    z-index: 9998;
+}
+
+.botato_topo {
+    position: fixed;
+    bottom: 55px;
+    right: 80px;
     z-index: 9999;
 }
 

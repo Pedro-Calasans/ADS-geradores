@@ -24,29 +24,38 @@
   
   <body>
 
-    <header >
-      <nav id="navbar-example2" class="navbar navbar-expand-lg  bg-dark border-bottom border-body navbar-dark" >
-        <div class="container-fluid ">
-          <a class="navbar-brand" href="index.html"> <img src="IMG/logo horizontal white.png" style="height: 55px; margin-left: 50px;" alt="logo"></a>
-          <button class="navbar-light navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-light navbar-toggler-icon"></span>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark " >
+        <div class="container"> 
+          <!--LOGO-->
+          <a class="navbar-brand" href="index.html"> <img src="IMG/logo horizontal white.png" style="height: 55px; " alt="logo"></a>
+          
+          <!-- MENU HAMBURGUER -->
+          <button class="navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button> 
-          <div class="collapse navbar-light navbar-collapse d-md-flex justify-content-end " id="navbarNavDropdown">
-            <ul class="navbar-nav " style="margin-right: 100px;">
+          
+          <!-- NAVEGAÇÃO -->
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+            <ul class="navbar-nav ">
               <li class="nav-item texto-menu-color">
                 <a class=" nav-link texto-menu-color "  href="index.html">Home</a>
               </li>
-              <li  class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle texto-menu-color" href="servicos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li  class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle texto-menu-color" href="servicos.html" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">
                   Serviços
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDropdown">
+                
+                <ul class="dropdown-menu dropdown-menu-dark  " aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading1">Contrato de manutenção</a></li>
                   <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading2">Manutenção Preventiva</a></li>
                   <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading3">Manutenção Corretiva</a></li>
                   <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading4">Automação Retrofit</a></li>
                   <li><a class="dropdown-item texto-menu-color" href="servicos.html#scrollspyHeading5">Diálise e Limpeza de Tanque</a></li>
                 </ul>
+
               </li>
               <li class="nav-item">
                 <a class=" nav-link texto-menu-color" href="contato.html">Contato</a>
@@ -57,8 +66,8 @@
       </nav>
     </header>
 
-    <div class="d-flex">
-      <div class="w-75 pe-3 pe-md-5 mt-5" style="margin-left: 100px;">
+    <div class="container d-flex">
+      <div >
         <div data-bs-spy="scroll" data-bs-target="servicos" data-bs-offset="0" class="scrollspy-example" tabindex="0">
           
           <div>
@@ -251,31 +260,52 @@
       </div>
     </div>
 
+    <!-- BOTÃO TOPO DA PAGINA -->
+    <div class="botato_topo">
+      <a href="servicos.html" target="_blank">
+        <img width="32" height="32" src="img/botato_topo.png" alt="Inicio da Pagina"/> 
+      </a>
+
+    </div>
+    <a href="servicos.html"> <img width="32" height="32" src="img/botato_topo.png" alt="Inicio da Pagina"/> </a>
+
+    <!-- WHATSAPP -->
     <div class="Whats">
-      <a href="https://wa.me/5511998670001? text=Olá, agradecemos seu contato." target="_blank">
-        <img src="IMG/whatsapp chat.png" width="200" alt="Fale conosco pelo whatsapp" title="Fale conosco pelo whatsapp">
+      <a href="https://wa.me/5511998670001? text=Visitei o site e gostaria de um orçamento." target="_blank">
+        <img width="64" height="64" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="Fale conosco pelo whatsapp" title="Fale conosco pelo whatsapp">
       </a>
     </div>
 
-    <footer style="margin-top: 50px;">
-      <div class="d-flex bg-dark texto-menu-color flex-row ">
-        <div class="w-50 pe-3 pe-md-5" style="margin-left: 50px;">
-          <h5>Localização</h5>
-          <p>Endereço: R Taipas, 541 <br>Bairro: Santa Maria <br>CEP: 09560-200 <br>Municipio: São Caetano do Sul <br>Estado: SP  </p>
-          <h5>Contato</h5>
-          <p>
-            <img width="32" height="32" src="https://img.icons8.com/fluency/48/google-pixel6.png" alt="google-pixel6"/>
-            (11) 97583-3199 
-          </p>
-          <p>
-            <img width="32" height="32" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
-            (11) 99867-0001 
-          </p> 
-          <p>
-            <img width="32" height="32" src="https://img.icons8.com/flat-round/64/secured-letter--v1.png" alt="secured-letter--v1"/>
-            contato@adsgeradores.com.br 
-          </p>
-          <div class="w-50 pe-3 pe-md-5">
+    <!-- RODAPÉ -->
+    <footer>
+      <div class="d-flex bg-dark  texto-menu-color">
+        <div class="container d-flex  mt-2 flex-column-reverse justify-content-md-between flex-md-row ">
+          
+          <div class="pb-2  text-center text-md-start" >
+            <h5>Localização</h5>
+            <p>Endereço: R Taipas, 541 <br>
+              Bairro: Santa Maria <br>
+              CEP: 09560-200 <br>
+              Municipio: São Caetano do Sul <br>
+              Estado: SP  </p>
+          </div>
+          <div class="pb-2  text-center text-md-start">
+            <h5>Contato</h5>
+            <p>
+              <img width="32" height="32" src="https://img.icons8.com/fluency/48/google-pixel6.png" alt="google-pixel6"/>
+              (11) 95091-2609 
+            </p>
+            <p>
+              <img width="32" height="32" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+              (11) 99867-0001 
+            </p> 
+            <p>
+              <img width="32" height="32" src="https://img.icons8.com/flat-round/64/secured-letter--v1.png" alt="secured-letter--v1"/>
+              atendimento@adsgeradores.com 
+            </p>
+          </div>
+      
+          <div class="pb-3">
             <h5 class=" text-center">Acompanhe Nossas Redes Sociais</h5>
             <div class="d-flex justify-content-center">
               <img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>
@@ -284,9 +314,9 @@
               <img width="48" height="48" src="https://img.icons8.com/color/48/telegram-app--v1.png" alt="telegram-app--v1"/>
             </div>
           </div>
+         
         </div>
       </div>
-
     </footer>
 
 
