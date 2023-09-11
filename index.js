@@ -10,7 +10,7 @@ const transport = nodemailer.createTransport({
 });
 
 transport.sendMail({
-    from: "pedroecw2011@gmail.com",
+    from: "dicuper@gmail.com",
     to: "",
     subject: "",
     text: "",
